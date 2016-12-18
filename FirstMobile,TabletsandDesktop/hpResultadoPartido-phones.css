@@ -900,6 +900,10 @@ footer{
         font-size: 2vw;
     }
 
+    .logo_club_listado img{
+        width: 50%;
+    }    
+
 }
 
 /* Desktop and some tablets landscape*/
@@ -933,7 +937,7 @@ footer{
         padding-top: 5%;
         padding-left: 5%;
         padding-right: 5%;
-        margin-left: 11%;
+        /*margin-left: 11%;*/
     } 
 
     .fichaResumen1{

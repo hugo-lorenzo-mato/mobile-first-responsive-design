@@ -144,7 +144,7 @@ td:nth-of-type(1):before {
     content: "Modalidad";
 }
 td:nth-of-type(2):before {
-    content: "Competición";
+    content: "Competicion";
 }
 td:nth-of-type(3):before {
     content: "Fecha";

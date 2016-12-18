@@ -867,6 +867,14 @@ footer{
         margin-left: -100%;
     }
 
+    .logo_club_listado{
+        width: 50%;
+    }
+
+    .logo_club_listado img{
+        width: 90%;
+    } 
+
 }
 
 
