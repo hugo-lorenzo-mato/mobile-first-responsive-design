@@ -1,0 +1,828 @@
+/* For mobile phones: */
+
+#wrapper{
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float:left;
+    width: 33.333333333333%;
+}
+
+nav li a{
+    display: block;
+    padding: 8%;
+    background-color: #0097CB;
+    text-decoration: none;
+    color:white;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+    border-color: black;
+}
+
+
+nav li a:hover{
+    background-color: #08436B;
+}
+
+
+
+.resultadoCabecera tbody tr td img{
+    width: 50%;
+}
+
+
+
+
+
+/* Tabla resumen */
+
+
+
+.fichaResumen{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+.competiciones_tabla_basic{
+    border:1px solid black;
+    margin-bottom: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fichaResumen thead{
+    margin-top: 3%;
+}
+
+
+
+.competiciones_tabla_basic thead tr td img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+.competiciones_tabla_basic thead tr td div{
+    width: 50%;
+}
+
+.competiciones_tabla_basic thead tr td div{
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+}
+
+
+.tablaResultadosBody tr{
+    display: inline-block;
+    width: 45%;
+    border-bottom: 4px solid #F6F6F6;
+    margin-bottom: 8%;
+    margin-right: 1%;
+    margin-left: 1%;
+    clear:both;
+}
+
+
+.tablaResultadosBody tr:nth-child(odd) {
+    background-color: white;
+    font-size: 2vw;
+    padding-left: 5px;
+}
+.tablaResultadosBody tr:nth-child(even) {
+    background-color: #F6F6F6;
+    font-size: 2vw;
+    padding-left: 5px;
+}
+
+
+
+
+/*Escondo la cabecera de los primeros datos que son los que más ocupan*/
+
+.cabeceraDatosResumen th:nth-of-type(1){
+    display: none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(2){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(3){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(4){
+    display:none;
+}
+
+
+.cabeceraDatosResumen th:nth-of-type(5){
+    display: none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(6){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(7){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(8){
+    display:none;
+}
+
+
+
+.cabeceraDatosResumen th:nth-of-type(9){
+    display: none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(10){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(11){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(12){
+    display:none;
+}
+
+.cabeceraDatosResumen th:nth-of-type(13){
+    display:none;
+}
+
+
+
+/*Las muestro en bloque*/
+
+.tablaResultadosBody tr td:nth-of-type(1){
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(2) {
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(3) {
+    display: block;
+}
+.tablaResultadosBody tr td:nth-of-type(4) {
+    display: block;
+}
+
+
+.tablaResultadosBody tr td:nth-of-type(5){
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(6) {
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(7) {
+    display: block;
+}
+.tablaResultadosBody tr td:nth-of-type(8) {
+    display: block;
+}
+
+
+
+.tablaResultadosBody tr td:nth-of-type(9){
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(10) {
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(11) {
+    display: block;
+}
+.tablaResultadosBody tr td:nth-of-type(12) {
+    display: block;
+}
+
+.tablaResultadosBody tr td:nth-of-type(13) {
+    display: block;
+}
+
+
+
+/*Les pongo un prefijo*/
+
+
+.tablaResultadosBody tr td:nth-of-type(1):before {
+    content: "Número: ";
+    padding-left: 10%;
+    font-weight: normal;
+}
+
+.tablaResultadosBody tr td:nth-of-type(2):before {
+    content: "Posición: ";
+    padding-left: 10%;
+}
+
+.tablaResultadosBody tr td:nth-of-type(3):before {
+    content: "Bandera: ";
+    padding-left: 10%;
+}
+.tablaResultadosBody tr td:nth-of-type(4):before {
+    content: "Jugador: ";
+}
+
+
+.tablaResultadosBody tr td:nth-of-type(5):before {
+    content: "Gol: ";
+    padding-left: 10%;
+    font-weight: normal;
+}
+
+.tablaResultadosBody tr td:nth-of-type(6):before {
+    content: "Penalti: ";
+    padding-left: 10%;
+}
+
+.tablaResultadosBody tr td:nth-of-type(7):before {
+    content: "FD: ";
+    padding-left: 10%;
+}
+.tablaResultadosBody tr td:nth-of-type(8):before {
+    content: "F: ";
+    padding-left: 10%;
+}
+
+
+.tablaResultadosBody tr td:nth-of-type(9):before {
+    content: "F: ";
+    padding-left: 10%;
+    font-weight: normal;
+}
+
+.tablaResultadosBody tr td:nth-of-type(10):before {
+    content: "-: ";
+    padding-left: 10%;
+}
+
+.tablaResultadosBody tr td:nth-of-type(11):before {
+    content: "--: ";
+    padding-left: 10%;
+}
+.tablaResultadosBody tr td:nth-of-type(12):before {
+    content: "AS: ";
+    padding-left: 10%;
+}
+
+.tablaResultadosBody tr td{
+    font-size: 3vw;
+}
+
+.tablaResultadosBody tr td:before{
+    font-size: 2.5vw;
+
+}
+
+.tablaResultadosBody tr td:nth-of-type(1){
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.tablaResultadosBody tr td:nth-of-type(4){
+    font-size: 2.5vw;
+    padding-left: 10%;
+}
+
+
+.tablaResultadosBody tr td .nombre_ficha_jugador_plus{
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+
+.Bandera img{
+    width: 7%;
+}
+
+.Bandera td:before{
+    margin-top: 20%;
+}
+
+
+/*Tabla incidencias*/
+
+
+.incidencias{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #e8e8e8;
+}
+
+
+.resultadoCabecera{
+    width: 100%;
+    font-size: 3vw;
+    padding-top:10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #C9DAE2;
+}
+
+
+.resultadoCabecera tr{
+    text-align: center;
+}
+
+.resultadoCabecera td{
+    width: 20%;
+}
+
+.resultadoCabecera th{
+    display: none;
+}
+
+.nombre1{
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+#game_score{
+    font-weight: bold;
+    font-size: 6vw;
+}
+
+
+.report_faltas{
+    background-image: url('https://www.sidgad.com/shared/portales_files/css/images/fondo_faltas.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-size: 
+    font-size: 3vw;
+}
+
+
+.tabla_standard{
+    font-size: 4vw;
+}
+
+.tabla_standard td:nth-child(1){
+    width: 12%;
+}
+
+.tabla_standard td:nth-child(2){
+    width: 12%;
+}
+
+.tabla_standard td:nth-child(3){
+    width: 12%;
+}
+
+.tabla_standard td:nth-child(4){
+    width: 12%;
+}
+
+
+.tabla_standard td:nth-child(5){
+    width: 5%;
+}
+
+
+.tabla_standard td:nth-child(6){
+    width: 47%;
+}
+
+/*
+.tabla_standard div, .tabla_standard img, .tabla_standard a{
+    margin-left: 45%;
+}
+*/
+
+.tabla_standard img{
+    max-width: 50%;
+}
+
+
+.evento_destacado div{
+    width: 100%;
+    border-left: 1px solid #e8e8e8;
+    margin-left: 2%;
+    font-size: 3vw;
+    margin-left: 0%;
+}
+
+.evento_destacado a{
+    text-decoration: none;
+    font-size: 3vw;
+    color: #1198D9;
+    margin-left: 0%;
+}
+
+
+.evento_negativo{
+    width: 100%;
+    border-left: 1px solid #e8e8e8;
+    width:100%;
+    margin-left: 2%;
+    font-size: 3vw;
+    margin: 0%;
+
+}
+
+.evento_negativo a{
+    text-decoration: none;
+    font-size: 3vw;
+    color: #1198D9;
+}
+
+
+.eventoDes_Gol{
+    width: 100%;
+    border-left: 1px solid #e8e8e8;
+    width:100%;
+    margin-left: 2%;
+    font-size: 3vw;
+    margin: 0%;
+}
+
+.eventoDes_Gol a{
+    text-decoration: none;
+    font-size: 3vw;
+    color: #1198D9;
+}
+
+
+
+.title_thickbox_partido{
+    background-color: #DDDDDD;
+    width: 98%;
+    margin-top: 2%;
+    padding: 1%;
+    font-size: 3vw;
+}
+
+.game_view_indcidencias_period{
+    background-color:#CCCCCC; 
+    background-size: ;
+    display: inline-block;
+    padding:3%;
+    border-radius:100%;
+}
+
+.tabla_standard td{
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.tabla_standard td:nth-child(1) div:nth-child(1){
+    margin-left: 30%;
+}
+.tabla_standard td:nth-child(1) div:nth-child(2){
+    text-align: center;
+}
+
+.tabla_standard td:nth-child(2){
+    border-left: 1px solid #e8e8e8;
+}
+
+.tabla_standard td:nth-child(2) img{
+    margin-left: 25%;
+}
+.tabla_standard td:nth-child(2) div{
+    text-align: center;
+}
+
+.tabla_standard td:nth-child(3) img{
+    display:block;
+    margin:0 auto 0 auto;
+    width: 90%;
+}
+
+.tabla_standard td:nth-child(4){
+    text-align: center;
+    color: white;
+}
+
+
+.tabla_standard td:nth-child(4) div{
+    width: 80%;
+    background-color: #666666;
+    border-radius: 15%;
+}
+
+.tabla_standard td:nth-child(5){
+    text-align: center;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+.tabla_standard td:nth-child(5) div{
+    width: 100%;
+    background-color: #FFCC00;
+    border-radius: 100%;
+
+}
+
+
+.tabla_standard td:nth-child(6) div{
+    margin-left: 2%;
+    width: 100%;
+}
+
+
+.tabla_standard td:nth-child(6) a{
+    margin-left: 2%;
+}
+
+
+
+/************  INFO LATERAL  *****************/ 
+
+#InfoLateral{
+    width: 100%;
+}
+
+
+#sidgad_thickbox_right_content{
+    width: 100%;
+}
+
+
+
+#sidgad_thickbox_right_topbar_content{
+    display: inline-block;
+    width: 92%;
+    background-color: #2397DE;
+    color: white;
+    padding: 4%;
+    font-size: 3vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+.close_sidgad_thickbox{
+    display: inline-block;
+    font-size: 4vw;
+    float: right;
+}
+
+.player_profile_data_right{
+    clear: both;
+}
+
+.player_profile_data_right div{
+    display: block;
+}
+
+.player_profile_picture{
+    width: 50%;
+    margin-left: 35%;
+}
+
+.data_player_thickbox_right_header_apartado{
+    width: 96%;
+    display: block;
+    font-size: 2vw;
+    clear: both;
+    padding: 2%;
+    background-color: #777777;
+    color: white;
+}
+
+
+.tabla_basic  thead:nth-child(2),
+.tabla_basic  thead:nth-child(5){    
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+}
+
+.tabla_basic{
+    font-size: 2vw;
+    display: block;
+}
+
+
+
+
+
+
+.tabla_basic tbody tr td:nth-child(1):before{
+    content: "Jornada: ";
+    font-size: 1.5vw;
+
+}
+.tabla_basic tbody tr td:nth-child(2) {
+    float: left;
+}
+
+.tabla_basic tbody tr td:nth-child(3) {
+    clear: both;
+
+}
+
+.tabla_basic tbody tr td:nth-child(4) {
+        width: 100%;
+
+}
+
+.tabla_basic tbody tr td:nth-child(5) {
+        width: 100%;
+
+}
+
+.tabla_basic tbody tr td:nth-child(6) {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.tabla_basic tbody tr .stats_table:nth-of-type(7):before{
+    content: "Goles: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr .stats_table:nth-of-type(8):before{
+    content: "Asistencias: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr .stats_table:nth-of-type(9):before{
+    content: "FD: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr .stats_table:nth-of-type(10):before{
+    content: "Penalties: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr .stats_table:nth-of-type(11):before{
+    content: "Tarjetas azules: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr .stats_table:nth-of-type(12):before{
+    content: "Tarjetas Rojas: ";
+    font-size: 1.5vw;
+}
+
+
+
+.tabla_basic tbody tr:nth-child(1) td:nth-child(1):before{
+    content: "Partidos Jugados: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr:nth-child(1) .stats_table:nth-of-type(2):before{
+    content: "Goles: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr:nth-child(1) .stats_table:nth-of-type(3):before{
+    content: "Asistencias: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr:nth-child(1) .stats_table:nth-of-type(4):before{
+    content: "FD: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr:nth-child(1) .stats_table:nth-of-type(5):before{
+    content: "Penalties: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr:nth-child(1) .stats_table:nth-of-type(6):before{
+    content: "Tarjetas azules: ";
+    font-size: 1.5vw;
+}
+.tabla_basic tbody tr:nth-child(1) .stats_table:nth-of-type(7):before{
+    content: "Tarjetas Rojas: ";
+    font-size: 1.5vw;
+}    
+
+
+.tabla_standard_less{
+    width: 100%;
+    font-size: 3vw;
+}
+
+
+.tabla_basic ,
+.tabla_basic thead,
+.tabla_basic tbody,
+.tabla_basic th,
+.tabla_basic td,
+.tabla_basic tr {
+    display: block;
+}
+
+
+.tabla_basic   tr:nth-child(odd) {
+    background-color: white;
+    padding-left: 5px;
+    margin-bottom: 5%;
+    empty-cells: hide;
+}
+ .tabla_basic   tr:nth-child(even) {
+    background-color: #F6F6F6;
+    padding-left: 5px;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    empty-cells: hide;
+
+}
+
+
+/*
+.player_profile_data_right div{
+    width: 100%;
+    display: block;
+}
+
+
+.player_profile_data_right{
+    display: block;
+}
+
+*/
+.player_profile_data_right img{
+    width: 100%;
+    padding: 10%;
+}
+
+.header_player_profile_name_text{
+    font-size: 3vw;
+    padding:2%;
+    text-align: center;
+    width: 96%;
+    clear: both;
+}
+
+.player_profile_data_right div:nth-child(19),
+.player_profile_data_right div:nth-child(29),
+.player_profile_data_right div:nth-child(35),
+.player_profile_data_right div:nth-child(45),
+.player_profile_data_right div:nth-child(55),
+.player_profile_data_right div:nth-child(65),
+.player_profile_data_right div:nth-child(7),
+.player_profile_data_right div:nth-child(8),
+.player_profile_data_right div:nth-child(93),
+.player_profile_data_right div:nth-child(10),
+.player_profile_data_right div:nth-child(11),
+.player_profile_data_right div:nth-child(12),
+.player_profile_data_right div:nth-child(13){
+        position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.player_profile_data_right div:nth-child(7),
+.player_profile_data_right div:nth-child(8){
+    clear: both;
+    margin-top: 10px;
+}
+
+
+/*FOOTER*/
+
+
+footer{
+    padding:10%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -5%;
+    margin-top: 10%;
+}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-device-width: 640px) and (min-device-height: 360px) {
+    body {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .filtro_agenda{
+        /*display: inline-block;
+        width: 29.54%;
+        margin-bottom: 5%;
+        margin-top: 5%;*/
+        font-size: 3vw;
+    }
+
+
+}
+
+
+

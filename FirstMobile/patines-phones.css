@@ -1,0 +1,257 @@
+/* For mobile phones: */
+
+#wrapper{
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float:left;
+    width: 33.333333333333%;
+}
+
+nav li a{
+    display: block;
+    padding: 8%;
+    background-color: #0097CB;
+    text-decoration: none;
+    color:white;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+    border-color: black;
+}
+
+
+nav li a:hover{
+    background-color: #08436B;
+}
+
+div.logo_competicion_listado{
+    width: 40%;
+}
+
+
+.logo_competicion_listado img{
+    width: 50%;
+    height: 50%;
+    float: left;
+    clear: both;
+    margin:20% 0 0 0;
+}
+
+
+.tabs_options_header {
+    background-color: #08436b;
+    color: #FFF;
+    font-size: 4vw;
+    line-height: 120%;
+    margin-top: 15px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    text-shadow: 1px 1px 4px #000;
+    letter-spacing: 2px;
+    width: 96%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.logos_competicion_HL{
+    margin: 0px 1px 0px 1px;
+    float: left;
+}
+
+.listado_competiciones_fila{
+    float:left;
+    clear: both;
+    border-bottom: 0.5px solid #CCC;
+    width: 90%;
+    padding:2%;    
+}
+
+.listado_competiciones_fila:hover{
+    background-color: #F0F0F0;
+}
+
+.scorer_apartado div{
+    display: inline-block;
+    width:86%;
+    clear:both;
+    margin:5%;
+    padding: 2%;
+    background-color: #4682B4;
+    color: white;
+}
+
+section listado_competiciones div:hover{
+    background-color: grey;
+}
+
+
+.nombre_competicion_listado{
+    padding-top: 10%;
+    margin-left: 25%;
+    color: black;
+}
+
+
+.teams_logos_competicion_listado{
+    margin-left: 25%;
+}
+
+.teams_logos_competicion_listado img{
+    width: 12%;
+    float:left;
+}
+
+div.logos_competicion_HL{
+    width: 50%
+}
+
+
+.info_competiciones{
+    font-size: 2.5vw;
+    color:#3F89B8;
+    width:70%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+
+.right_container_competiciones a{
+    display:inline-block;
+    width: 100%;
+}
+
+.table_right_sidebar{
+    width: 90%;
+    background-color: #CCC;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%: 
+}
+
+.table_right_sidebar thead tr{
+    display: none;
+}
+
+.table_right_sidebar tbody tr td{
+    width: 20%;
+}
+
+#final{
+    margin-left: : 10px;
+}
+
+.table_right_sidebar tbody img{
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+table.table_right_sidebar{
+    font-size: 4vw;
+    border-collapse: collapse;
+}
+
+
+.first_row td:nth-child(1),
+.first_row td:nth-child(3),
+.first_row td:nth-child(5){
+    width: 20%;
+}
+
+.first_row td:nth-child(3){
+    font-size: 2.9vw;
+}
+
+.first_row td:nth-child(2),
+.first_row td:nth-child(4){
+    width: 15%;
+    font-size: 2vw;
+}
+
+
+
+.first_row{
+    text-align: center;
+}
+
+.second_row{
+    font-size: 2vw;
+    text-align: center;
+}
+
+ 
+#sinComenzar td:nth-child(3){
+    font-size: 1.5vw;
+} 
+ 
+ 
+
+.scorer_box a{
+    text-decoration: none;
+}
+
+.scorer_box a:hover{
+    text-decoration: none;
+    color: #003366;
+}
+
+#sinComenzar{
+    margin-left: : 10px;
+    background-color: #F0F0F0;
+}
+
+footer{
+    padding:10%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -5%;
+    margin-top: 10%;
+}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-device-width: 640px) and (min-device-height: 360px) {
+    body {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .filtro_agenda{
+        /*display: inline-block;
+        width: 29.54%;
+        margin-bottom: 5%;
+        margin-top: 5%;*/
+        font-size: 3vw;
+    }
+/*
+    .filtro_agenda:nth-child(1){
+        margin-left: 2.5%;
+    }
+
+    .filtro_agenda:nth-child(2){
+        margin-left: 2.5%;
+        margin-right:  2.5%;
+    }
+
+    .filtro_agenda:nth-child(3){
+        margin-right: 2.5%;
+    }
+*/
+
+}
+
+
+

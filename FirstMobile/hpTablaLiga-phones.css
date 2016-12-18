@@ -1,0 +1,627 @@
+/* For mobile phones: */
+
+
+html{
+    background-color: rgba(0, 152, 203, 0.08);
+}
+
+#wrapper{
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float:left;
+    width: 33.333333333333%;
+}
+
+nav li a{
+    display: block;
+    padding: 8%;
+    background-color: #0097CB;
+    text-decoration: none;
+    color:white;
+    font-size: 3.2vw;
+    text-align: center;
+    font-weight: bold;
+    border-color: black;
+}
+
+
+nav li a:hover{
+    background-color: #08436B;
+}
+
+
+#sidgad_thickbox {
+    overflow: -moz-scrollbars-none;
+}
+#sidgad_thickbox_right {
+    overflow: -moz-scrollbars-none;
+}
+    
+
+#sidgad_thickbox {
+    width: 1000px;
+    background-color: #FFF;
+    z-index: 10000;
+    height: 98vh;
+    /* position: absolute; */
+    /* display: inline-block; */
+    /* position: static; */
+    /* position: fixed; */
+    overflow-y: scroll;
+    margin: 10px 0px 10px 0px;
+    display: none;
+}   
+
+#sidgad_thickbox_right {
+    width: 450px;
+    background-color: #FFF;
+    z-index: 100000;
+    height: 95vh;
+    position: absolute;
+    /* display: inline-block; */
+    /* position: static; */
+    position: fixed;
+    overflow-y: scroll;
+    /* margin: 10px 0px 10px 0px; */
+    right: 5px;
+    display: none;
+    top: 5vh;
+    border: 1px solid #CCC;
+    box-shadow: -4px -3px 8px 0px #666;
+}
+
+
+
+
+
+/***Empiezo con la cabecera****/
+
+
+.tab_options_header_competicion div{
+    width: 100%;
+    display: block;
+    color: white;
+    font-size: 2vw;
+    background-color: #08436B;
+}
+
+
+#titulo_competicion_header{
+    width: 96%;
+    padding:2%;
+    background-color: #08436B;
+    color: white;
+    display: inline-block;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+
+#titulo_competicion_header span:nth-child(1){
+    font-size: 3.5vw;
+}
+
+
+#titulo_competicion_header span:nth-child(2){
+    margin-left: 2%;
+    font-size: 2.2vw;
+}
+
+.logo_inside_competicion{
+    width: 15%;
+}
+
+
+.menu_competicion_options{
+    width: 85%;
+    display: inline-block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 1.5%;
+}
+
+
+.menu_competicion_options a{
+    text-decoration: none;
+    background-color: #E2E2E2;
+    color: black;
+    border-radius: 10px;
+    padding: 1.5%;  
+    margin: 0.2%;  
+    font-size: 2vw;
+}
+
+.menu_competicion_options a:hover{
+    font-weight: bold;
+    border-bottom: 6px solid #1188BB;
+    background-color: #BFEFFF;
+
+}
+
+.logo_inside_competicion img{
+    width: 80%;
+    margin-top: 8%;
+    float: left;
+}
+
+.logo_equipo_menu_container{
+    display: inline-block;
+    width: 11%;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-top-left-radius:10%;
+    border-top-right-radius:10%;
+    background-color: #F0F0F0;
+    margin:2%;
+}
+
+
+.teams_logos_competicion_listado{
+    clear: both;
+    border-bottom: 1px solid #CCC;
+    border-top:1px solid #CCC;
+}
+
+.logo_equipo_menu_container:hover{
+    border-bottom: 6px solid #1188BB;
+}
+.logo_equipo_menu_nombre{
+    font-size: 2.2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.logo_equipo_menu_logo img{
+    width: 100%;
+}
+
+/****** CERRADA CABECERA DE LA SECCIÓN EMPIEZO CON LAS DISTINTAS TABLAS ********/
+
+
+/***************   resto de tablas: goles, tarjetas, plantillas   ****************************/
+
+
+
+.tabla_basic ,
+.tabla_basic thead,
+.tabla_basic tbody,
+.tabla_basic th,
+.tabla_basic td,
+.tabla_basic tr {
+    display: block;
+}
+
+
+.tabla_basic   tr:nth-child(odd) {
+    background-color: white;
+    font-size: 3vw;
+    padding-left: 5px;
+    margin-bottom: 5%;
+    text-align: center;
+    empty-cells: hide;
+}
+ .tabla_basic   tr:nth-child(even) {
+    background-color: #F6F6F6;
+    font-size: 3vw;
+    padding-left: 5px;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 2%;
+    empty-cells: hide;
+
+}
+
+.tabla_basic  thead {    
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+}
+
+.tabla_basic tbody tr td:nth-child(2){
+    text-align: center;
+}
+
+.tabla_basic tbody tr td:nth-child(2) span{
+    display: none;
+}
+
+
+.fila_stats_player td{
+    margin-top: 5%;
+    font-weight: bold;
+    margin-top: 1.5%;
+}
+
+.fila_stats_player td:before {   
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 3.5vw;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.fila_stats_player  td:nth-of-type(6):before{
+    content: "Goles: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(7):before {
+    content: "Jugados: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(8):before {
+    content: "Goles pp: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(9):before {
+    content: "Asistencias: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(10):before {
+    content: "Asistencias pp: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(11):before{
+    content: "Penalties: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(12):before {
+    content: "Penalties %: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(13):before {
+    content: "FD: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(14):before {
+    content: "FD %: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(15):before {
+    content: "Tarj. Azul: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(16):before {
+    content: "Tarj. Azul pp: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(17):before {
+    content: "Tarj. Roja: ";
+    font-weight: normal;
+}
+.fila_stats_player  td:nth-of-type(18):before {
+    content: "Tarj. Roja pp: ";
+    font-weight: normal;
+}
+
+.stats_table{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.fila_stats_player a{
+    text-decoration: none;
+    color:#0E71B4;
+    display: inline-block;
+}
+
+.fila_stats_player a:hover{
+    text-decoration: none;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+
+.fila_stats_player td:nth-child(1){
+    float: left;
+    margin-left: 49%;
+    background-color: #4682B4;
+    background-size: 100%;
+    border-radius: 100%;
+    color: white;
+    padding:2%;
+}
+
+
+.fila_stats_player td:nth-child(2) span{
+    /*margin-left: 920%;*/
+    padding-top: 2%;
+    font-size: 3vw;
+    display: block;
+}
+
+.fila_stats_player td:nth-child(3) img,
+.fila_stats_player td:nth-child(4) img{
+    /*margin-left: 1450%;*/
+    font-size: 4vw;
+    display: none;
+    width: 100%;
+}
+
+
+.fila_stats_player td:nth-child(4) img{
+    width: 150%;
+    /*margin-left: 1580%;*/
+}
+
+
+
+/**************Para la tabla específica de calendario y resultado ********************/
+
+
+.tabla_standard_calendario{
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.tabla_standard_calendario thead,
+.tabla_standard_calendario tbody,
+.tabla_standard_calendario th,
+.tabla_standard_calendario td,
+.tabla_standard_calendario tr {
+    display: block;
+    width: 100%;
+
+}
+
+
+
+.tabla_standard_calendario tr:nth-child(odd) {
+    background-color: white;
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+.tabla_standard_calendario tr:nth-child(even) {
+    background-color: #F6F6F6;
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+
+
+.tabla_standard_calendario tr, .tabla_standard_calendario td, .tabla_standard_calendario div{
+    text-align: center;
+}
+
+
+.nombre_junto_logo, .tabla_standard_less{
+    font-size: 2vw;
+}
+
+.tabla_standard_calendario tr td:nth-of-type(8){
+    font-weight: bold;
+    font-size: 4vw;
+    background-color: #f1c40f;
+    border-radius: 100px;
+}
+
+
+.jornada{
+    width: 100%;
+    background-color: #4682B4;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.tabla_standard_calendario thead tr th{
+    width: 100%;
+}
+
+/***********Tabla clasificación ************/
+
+
+
+.tabla_standard_clasificacion ,
+.tabla_standard_clasificacion thead,
+.tabla_standard_clasificacion tbody,
+.tabla_standard_clasificacion th,
+.tabla_standard_clasificacion  td,
+.tabla_standard_clasificacion  tr {
+    display: block;
+}
+
+.tabla_standard_clasificacion  tr:nth-child(odd) {
+    background-color: white;
+    font-size: 3vw;
+    padding-left: 5px;
+    margin-bottom: 5%;
+}
+.tabla_standard_clasificacion  tr:nth-child(even) {
+    background-color: #F6F6F6;
+    font-size: 3vw;
+    padding-left: 5px;
+    margin-bottom: 5%;
+
+}
+
+
+.tabla_standard_clasificacion  thead {    
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+
+
+
+.tabla_standard_clasificacion td {   
+    border: none;
+    position: relative;
+    padding-left: 20%;
+    font-size: 4vw;
+}
+
+.stats_table_special{
+    background-color: #6BB9F0;
+    color:white;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 40px;
+}
+
+
+.stats_table_specialPuntos{
+    color: black;
+    padding-left: 20%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+.tabla_standard_clasificacion td:before {
+    
+    position: absolute;
+    margin-left: -35%;
+    width: 40%;
+    white-space: nowrap;
+    font-size: 3.5vw;
+}
+
+
+.tabla_standard_clasificacion td:nth-child(1) div{
+    text-align: left;
+    font-size: 5vw;
+    padding-left: 48%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+
+.tabla_standard_clasificacion td:nth-child(1){
+    background-color: #2397DE;
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+
+
+.tabla_standard_clasificacion td:nth-child(1),
+.tabla_standard_clasificacion td:nth-child(2),
+.tabla_standard_clasificacion td:nth-child(3){   
+    padding-left: 0%;
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+
+
+/*  Etiquetamos la información  */
+/*No puedo sacar las columnas que no muestro, porque sino no muestra la información correctamente*/
+
+.tabla_standard_clasificacion  td:nth-of-type(4):before{
+    content: "Puntos";
+}
+.tabla_standard_clasificacion  td:nth-of-type(5):before {
+    content: "Jugados";
+}
+.tabla_standard_clasificacion  td:nth-of-type(6):before {
+    content: "Empatados";""
+}
+.tabla_standard_clasificacion  td:nth-of-type(7):before {
+    content: "Perdidos";
+}
+.tabla_standard_clasificacion  td:nth-of-type(8):before {
+    content: "Goles a favor";
+}
+.tabla_standard_clasificacion  td:nth-of-type(9):before {
+    content: "Goles en contra";
+}
+.tabla_standard_clasificacion  td:nth-of-type(10):before {
+    content: "Gol average";
+}
+.tabla_standard_clasificacion  td:nth-of-type(11):before {
+    content: "Penalties";
+}
+
+
+/**************  ARBITROS  *******************/
+
+
+.tabla_standard_arbitros ,
+.tabla_standard_arbitros thead,
+.tabla_standard_arbitros tbody,
+.tabla_standard_arbitros th,
+.tabla_standard_arbitros  td,
+.tabla_standard_arbitros  tr {
+    display: block;
+}
+
+
+
+.tabla_standard_arbitros  tr:nth-child(odd) {
+    background-color: white;
+    font-size: 3vw;
+    padding-left: 5px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.tabla_standard_arbitros  tr:nth-child(even) {
+    background-color: #F6F6F6;
+    font-size: 3vw;
+    padding-left: 5px;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 2%;
+
+}
+
+
+
+.jornadaArbitros div{
+    display: block;
+    width: 100%;
+    background-color: #4682B4;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+
+}
+
+.tabla_standard_arbitros tr td:nth-child(5){
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 3.5vw;
+}
+
+
+
+/**************  FOOTER  *******************/
+
+
+footer{
+    padding:10%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -5%;
+    margin-top: 10%;
+}
+
+
+
+
+

@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>FGP COMPETICIONES</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5", user-scalable=yes>
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+   <link rel="stylesheet" type="text/css" href="calendario-phones.css">
+   <script type="text/javascript" src="blog.js"></script>
+   <script src="jquery.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="header"></div>
+        </header>
+        <nav id="menu">
+         <ul>
+              <li><a href="index.html">Agenda/FGP</a></li>
+              <li><a href="HockeyP.html">H. Patínes</a></li>
+              <li><a href="HockeyL.html">H. Línea</a></li>
+        </ul> 
+        </nav>
+
+        <section>
+ 
+        </section>
+
+
+    <section>
+                <select class="filtro_agenda" id="agenda_idm_select">
+                    <option value="0" selected="selected">Filtro Modalidad ...</option>
+                    <option value="1">HOCKEY PATINES</option>
+                    <option value="2">HOCKEY LÍNEA</option>
+                </select>
+                <select class="filtro_agenda" id="agenda_date_select">
+                    <option value="8" selected="selected">Próximos 7 Días</option>
+                    <option value="16">Próximos 15 Días</option>
+                    <option value="22">Próximos 21 Días</option>
+                </select>
+                <select class="filtro_agenda" id="agenda_club_select">
+                    <option value="0" selected="selected">Filtro Club ...</option>
+                    <option value="162">A GUARDA H.LIÑA</option>
+                    <option value="260">A.D. CRISTO REY</option>
+                    <option value="304">A.D. ESPIRAL SARRIA</option>
+                    <option value="259">A.D. LICEO LA PAZ</option>
+                    <option value="261">A.D. RAIOLA FERROL</option>
+                    <option value="158">A.D.C. OBRADOIRO</option>
+                    <option value="152">AC ORDENES</option>
+                    <option value="165">ADC ALQUIMIA INLINE</option>
+                    <option value="314">AEHDE</option>
+                    <option value="313">APG BIERZO-TONI SARIOL</option>
+                    <option value="323">BRIGANTIAS ROLLER DERBY</option>
+                    <option value="163">BRIGANTIUM H.L.</option>
+                    <option value="278">BUXAINA</option>
+                    <option value="275">C PATIN AS PONTES</option>
+                    <option value="286">C. CASTRELOS P.A.</option>
+                    <option value="321">C. DE HOCKEY ISLA PANCHA</option>
+                    <option value="272">C. DEPORTIVO FERVELLO</option>
+                    <option value="273">C. DEPORTIVO FONTIÑAS</option>
+                    <option value="274">C. PATIART CORISTANCO</option>
+                    <option value="277">C. PATIN VELUA</option>
+                    <option value="270">C. PATINAJE RIBEIRA</option>
+                    <option value="282">C.A.R.P.A</option>
+                    <option value="294">C.COVELO P.A.</option>
+                    <option value="291">C.D. EIXO GONDOMAR</option>
+                    <option value="307">C.D. OURELA</option>
+                    <option value="303">C.D. RADEANSA</option>
+                    <option value="330">C.D.P. BOIRO</option>
+                    <option value="145">C.H. COMPOSTELA</option>
+                    <option value="151">C.H. RAXOI</option>
+                    <option value="164">C.H.L. CABUXOS -LUGO</option>
+                    <option value="168">C.H.L. MEIGAS - LUGO</option>
+                    <option value="287">C.P. ARTISTICO LUAR</option>
+                    <option value="264">C.P. AURA</option>
+                    <option value="285">C.P. BOLBORETA-REDONDELA</option>
+                    <option value="281">C.P. CAMPUS STELLAE</option>
+                    <option value="153">C.P. CERCEDA</option>
+                    <option value="280">C.P. GALIA</option>
+                    <option value="324">C.P. INERCIA NARÓN</option>
+                    <option value="325">C.P. LENDA</option>
+                    <option value="266">C.P. MAXIA</option>
+                    <option value="271">C.P. SARELA</option>
+                    <option value="265">C.P.A. BRINCADEIRA</option>
+                    <option value="318">C.P.A. CONDADO</option>
+                    <option value="322">C.P.A. COSTA DA MORTE</option>
+                    <option value="315">C.P.A. FENIX</option>
+                    <option value="292">C.P.A. GONDOMAR</option>
+                    <option value="279">C.P.A. OMEGA</option>
+                    <option value="296">C.P.A. RIBEX</option>
+                    <option value="288">C.P.A. ROSALEIRA MOS</option>
+                    <option value="320">C.P.A. SALVATERRA</option>
+                    <option value="298">C.P.A. SOUTOMAIOR</option>
+                    <option value="290">C.P.A. VALLADARES</option>
+                    <option value="268">C.P.CONXURO A LARACHA</option>
+                    <option value="256">C.P.OROSO</option>
+                    <option value="276">C.PATIN AXEL</option>
+                    <option value="295">C.PATIN PORRIÑO</option>
+                    <option value="289">C.PATIN VAGALUME</option>
+                    <option value="262">C.PATINAJE COMPOSTELA</option>
+                    <option value="263">C.PATINAJE OLEIROS</option>
+                    <option value="269">C.PATINAXE ALQUIMIA</option>
+                    <option value="150">CLUB AA DOMINICOS</option>
+                    <option value="305">CLUB ANCA</option>
+                    <option value="283">CLUB ANFORA</option>
+                    <option value="293">CLUB APOSTOL SANTIAGO</option>
+                    <option value="306">CLUB CAMPELAS</option>
+                    <option value="159">CLUB CM HOCKEY FERROL</option>
+                    <option value="148">CLUB COMPAÑIA DE MARIA</option>
+                    <option value="257">CLUB HOCKEY OLEIROS</option>
+                    <option value="267">CLUB PATIBER</option>
+                    <option value="297">CORUXO F.C.</option>
+                    <option value="258">DIVER PATIN C.D.</option>
+                    <option value="299">EL OLIVO</option>
+                    <option value="309">ESC.DEPOR CHANTADA</option>
+                    <option value="147">ESCOLA LUBIANS</option>
+                    <option value="310">FREESTYLE SLALOM VIGO</option>
+                    <option value="328">GALICIA ROLLERS</option>
+                    <option value="329">H.C. AS PONTES</option>
+                    <option value="146">H.C. BORBOLLA</option>
+                    <option value="155">H.C. CAMBRE</option>
+                    <option value="160">H.C. CIES</option>
+                    <option value="149">H.C. LICEO</option>
+                    <option value="157">H.C. RIAZOR</option>
+                    <option value="302">INDEPENDIENTE</option>
+                    <option value="167">LOSTREGOS H.L. LUGO</option>
+                    <option value="332">PA SALCEDA</option>
+                    <option value="166">PATINATOUR-MORCEGOS</option>
+                    <option value="319">PATINAXE A POBRA</option>
+                    <option value="326">PONTE A PATINAR</option>
+                    <option value="327">QUAD IRMANDIÑOS</option>
+                    <option value="311">S.C.D. RABADEIRA</option>
+                    <option value="312">SADA PATIN</option>
+                    <option value="156">SANTA MARIA DEL MAR</option>
+                    <option value="331">SKATE CLUB</option>
+                    <option value="154">TRAVIESAS H.C.</option>
+                    <option value="161">VIGO BLUE RINGED</option>
+                    <option value="316">VIGO ROLLER DERBY</option>
+
+                </select>
+                <select class="filtro_idc" id="filtrocompeticion1">
+                    <option value="0" selected="selected">Filtro Competicion ...</option>
+                    <option value="4850081">LIGA ALEVIN 2ª</option>
+                    <option value="4850054">LIGA SENIOR AUTONÓMICA</option>
+                    <option value="4850057">LIGA JUNIOR AUTONÓMICA</option>
+                    <option value="4850058">LIGA INFANTIL 1ª DIVISIÓN AUTONÓMICA</option>
+                    <option value="4850080">LIGA ALEVIN 1ª</option>
+                    <option value="4850079">LIGA MICRO SUR</option>
+                    <option value="4850078">LIGA MICRO NORTE</option>
+                    <option value="4850075">LIGA PREBENJAMIN GRUPO 4</option>
+                    <option value="4850074">LIGA PREBENJAMIN GRUPO 3</option>
+                    <option value="4850073">LIGA PREBENJAMIN GRUPO 2</option>
+                    <option value="4850072">LIGA PREBENJAMIN GRUPO 1</option>
+                    <option value="4850071">LIGA BENJAMIN GRUPO 4</option>
+                    <option value="4850070">LIGA BENJAMIN GRUPO 3</option>
+                    <option value="4850068">LIGA BENJAMIN GRUPO 1</option>
+                    <option value="4850069">LIGA BENJAMIN GRUPO 2</option>
+                    <option value="4850065">COPA FEDERACION FEMENINA</option>
+                    <option value="4850064">LIGA ALEVIN GRUPO 3</option>
+                    <option value="4850063">LIGA ALEVIN GRUPO 2</option>
+                    <option value="4850062">LIGA ALEVIN GRUPO 1</option>
+                    <option value="4850060">LIGA INFANTIL 2ª DIVISIÓN AUTONÓMICA</option>
+                    <option value="4850059">LIGA JUVENIL AUTONÓMICA</option>
+
+                </select>
+                <select class="filtro_idc" id="filtrocompeticion2">
+                    <option value="0" selected="selected">Filtro Competicion ...</option>
+                    <option value="4850076">LIGA INFANTIL</option>
+                    <option value="4850067">LIGA SENIOR FEMENINA</option>
+                    <option value="4850066">LIGA SENIOR MASCULINA</option>
+                    <option value="4850077">LIGA BENJAMIN</option>
+
+                </select>
+
+
+
+            </section>
+
+
+
+                <section>
+
+                    <table>
+                        <thead>
+                            <tr>
+                              <!-- colspan nos sirve para desktop, pero no para nuestra opción mobil -->
+                                <th>Modalidad</th>
+                                <th>Competición</th>
+                                <th class="date">Fecha </th>
+                                <th class="date">Hora</th>
+                                <!--<th class="escudoTitulo"></th>-->
+                                <th>Local</th>
+                                <!--<th class="escudoTitulo"></th>-->
+                                <th>Visitante</th>
+                                <th>Result.</th>
+                                <th>Pista</th>
+                            </tr>
+
+
+                        </thead>
+                        <tbody>
+
+                            <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                <td>
+                                    <div class="icModalidad">HP
+                                </td>
+                                <td>
+                                    <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                </td>
+                                <td class="date"><div>26/11/2016<div></td>
+                                <td class="date">11:00</td>
+                                <td class="escudos">
+                                    <div><img src="agendaimg/258.png">
+                                    </div>
+                                </td>
+                                <td>CLUB COMPAÑIA DE MARIA B</td>
+                                <td class="escudos">
+                                    <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                    </div>
+                                </td>
+                                <td>C.H. COMPOSTELA A</td>
+                                <td class="date result">0 - 10</td>
+                                <td>COMPAÑÍA MARIA</td>
+                            </tr>
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_149_4850065">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_149_4850065">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_149_4850065">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+                                     <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+                                    
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+                                     <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+
+
+                                    
+                                    <tr class="fila_agenda" param_game="1_7_145_145_4850080">
+                                        <td>
+                                            <div class="icModalidad">HP</td>
+                                        <td>
+                                            <div>LIGA PREBENJAMIN GRUPO 4</div>
+                                        </td>
+                                        <td class="date">26/11/2016</td>
+                                        <td class="date">11:00</td>
+                                        <td class="escudos">
+                                            <div><img src="agendaimg/258.png" >
+                                            </div>
+                                        </td>
+                                        <td>CLUB COMPAÑIA DE MARIA B</td>
+                                        <td class="escudos">
+                                            <div><img src="https://www.sidgad.com/shared/portales_files/images/no_logo.png" >
+                                            </div>
+                                        </td>
+                                        <td>C.H. COMPOSTELA A</td>
+                                        <td class="date result">0 - 10</td>
+                                        <td>COMPAÑÍA MARIA</td>
+                                    </tr>
+
+                                </tbody>
+
+                    </table>
+                    </div>
+                </section>
+         
+
+
+<script>
+var $j = jQuery.noConflict();
+$j(document).ready(function() {
+
+    
+    filtrar_agenda();
+    
+    $j(".filtro_agenda").on('change', function(e){
+        e.preventDefault(); 
+        filtrar_agenda();
+    
+    });
+
+}); 
+
+
+
+
+
+
+
+</script>
+<footer>
+   <div>Hugo Lorenzo Mato IPM Fuente Tabla Responsive: <a href="https://css-tricks.com/responsive-data-tables/">CSS-TRICKS</a></div>
+</footer>
+</body>
+
+</html>

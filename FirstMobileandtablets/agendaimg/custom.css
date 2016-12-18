@@ -1,0 +1,84 @@
+body {
+	font-family: 'Lato', sans-serif;
+	width: 1000px;
+	margin: 0 auto;
+	background: #D8D3CB;
+    /*background-image: url(images/bg_red.png);
+    background-repeat: repeat-x;*/
+}
+
+.container_portal {
+	background-color: #FFF;
+	min-height: 100vh;
+}
+
+.content_portal {
+	/*background-color: #18B;*/
+	min-height: 100vh;
+}
+.fixed_tabs {
+    background-image: url(images/bg_red.png)!important;
+    background-repeat: repeat-x!important;
+}
+
+.header_portal {
+    /*background-image: url(images/portada_fep.png);*/
+    background-image: url(images/header_fgp.png);
+    background-repeat: no-repeat;
+    background-size: 1000px;	
+	display: block; 
+	height: 179px;
+    margin-top: 0px;
+    margin-bottom: -50px;
+}
+
+.footer_portal {
+    background-color: #FFF;
+    display: block;
+    height: 70px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+#partido_data_ppal {
+    position: absolute;
+    width: 998px;
+    top: 40px;
+}
+.tab_modal_text {
+	margin: 5px 0px 0px 0px;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 12px;
+}
+.tab_icon {
+    margin: 3px 8px 0px 4px;
+}
+.tab_modal {
+ 	border-left: 1px solid #0e71b4;
+    border-right: 1px solid #0e71b4;
+    border-top: 1px solid #0e71b4;
+    min-width: 115px;
+    padding: 0px 5px 0px 0px;
+    background-color: #2397de;
+}
+.tab_modal_selected {
+	min-width: 115px;
+	padding: 0px 5px 0px 0px;
+	border-right: none;
+	background-color: #08436b;
+}
+
+.tab_modal_container {
+	/*background-color: #007eb8;*/
+}
+.tabs_options_header {
+    background-color: #08436b;
+}
+.cambio_temporada {
+	display: none;
+}
+
+    
+    
